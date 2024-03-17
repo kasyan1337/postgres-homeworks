@@ -33,6 +33,7 @@ try:
                     cur.execute("INSERT INTO orders (order_id, customer_id, employee_id, order_date, ship_city) VALUES (%s, %s, %s, %s, %s)",
                                 (order_id, customer_id, employee_id, order_date, ship_city))
 
+
             # conn.commit() # not needed, because conn is opened with 'with', so it automatically commits
 
 
